@@ -147,7 +147,10 @@ function chooseRandomCategory (categories) {
   // return category object with that randomArrayIndex
   return categories[randomArrayIndex];
 }
-
+var insertHtml = function (selector, html) {
+  var targetElem = document.querySelector("#main-content");
+  targetElem.innerHTML = html;
+};
 
 // Load the menu categories view
 dc.loadMenuCategories = function () {
