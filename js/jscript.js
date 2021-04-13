@@ -102,7 +102,7 @@ function buildAndShowHomeHTML (categories) {
       chooseRandomCategory(categories);
       var chosenCategoryShortName = randomCategoryShortName;
        var insertProperty = function (string, propName, propValue) {
-        var propToReplace = "{{" + propName + "}}";
+        var propToReplace = "{{" + chosenCategoryShortName + "}}";
         string = string
           .replace(new RegExp(propToReplace, "g"),propValue);
           return string;
