@@ -105,6 +105,7 @@ function buildAndShowHomeHTML (categories) {
         var propToReplace = "{{" + chosenCategoryShortName + "}}";
         string = string
           .replace(new RegExp(propToReplace, "g"),propValue);
+         alert(string);
           return string;
       } 
 
