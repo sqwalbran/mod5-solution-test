@@ -84,7 +84,7 @@ showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   allCategoriesUrl, function(buildAndShowHomeHTML) {
     document.querySelector("#main-content")
-      .innerHTML = buildAndShowHomeHTML;
+      .innerHTML = buildAndShowHomeHTML.value;
   },// ***** <---- TODO: STEP 1: Substitute [...] ******
   true); // Explicitly setting the flag to get JSON from server 
 });
@@ -100,6 +100,7 @@ function buildAndShowHomeHTML (categories) {
     homeHtmlUrl,
     function (homeHtml) {
       chooseRandomCategory(categories);
+      console.log (chooseRandomCategory(categories);
       var chosenCategoryShortName = randomCategoryShortName;
        var insertProperty = function (string, propName, propValue) {
         var propToReplace = "{{" + chosenCategoryShortName + "}}";
