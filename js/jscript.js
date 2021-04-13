@@ -100,12 +100,11 @@ function buildAndShowHomeHTML (categories) {
     homeHtmlUrl,
     function (homeHtml) {
       chooseRandomCategory(categories);
-      var chosenCategoryShortName = chooseRandomCategory(randomCategoryShortName);
+      var chosenCategoryShortName = chooseRandomCategory(categories[randomArrayIndex]);
        var insertProperty = function (string, propName, propValue) {
         var propToReplace = "{{" + chosenCategoryShortName + "}}";
         string = string
           .replace(new RegExp(propToReplace, "g"),propValue);
-         alert(string);
           return string;
       } 
 
