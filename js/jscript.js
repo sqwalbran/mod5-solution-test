@@ -100,8 +100,7 @@ function buildAndShowHomeHTML (categories) {
     homeHtmlUrl,
     function (homeHtml) {
       chooseRandomCategory(categories);
-      console.log (chooseRandomCategory(categories));
-      var chosenCategoryShortName = randomCategoryShortName;
+      var chosenCategoryShortName = chooseRandomCategory(randomCategoryShortName);
        var insertProperty = function (string, propName, propValue) {
         var propToReplace = "{{" + chosenCategoryShortName + "}}";
         string = string
