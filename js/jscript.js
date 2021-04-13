@@ -86,7 +86,7 @@ $ajaxUtils.sendGetRequest(
     document.querySelector("#main-content")
       .innerHTML = buildAndShowHomeHTML.value;
   },// ***** <---- TODO: STEP 1: Substitute [...] ******
-  true); // Explicitly setting the flag to get JSON from server 
+  false); // Explicitly setting the flag to get JSON from server 
 });
 // *** finish **
 
