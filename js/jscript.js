@@ -84,7 +84,7 @@ showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
  allCategoriesUrl, function(buildAndShowHomeHTML) {
    document.querySelector("#main-content")
-     .innerHTML = buildAndShowHomeHTML.value;
+     .innerHTML = buildAndShowHomeHTML.innerHTML;
  },// ***** <---- TODO: STEP 1: Substitute [...] ******
   true); // Explicitly setting the flag to get JSON from server 
 });
