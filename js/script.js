@@ -103,12 +103,12 @@ function buildAndShowHomeHTML (categories) {
   $ajaxUtils.sendGetRequest(
     homeHtmlUrl,
     function (homeHtml) {
-      
+      var html = homeHtmlUrl;
       var chosenCategoryShortName=chooseRandomCategory(categories);
-      console.log(chosenCategoryShortName);
-      alert(chosenCategoryShortName);
-      //document.getElementsByTagName("randomCategoryShortName").innterHTML = chosenCategoryShortName;
-     document.getElementById("main-content").innerHTML = "Hi, there!";
+      html =
+        insertProperty(html,"{{"+randomCategoryShortName+"}}.short_name");
+      
+      
       return homeHtml;
 
 
