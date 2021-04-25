@@ -30,7 +30,7 @@ var insertHtml = function (selector, html) {
   targetElem.innerHTML = html;
 };
 var insertHtml = function (selector, html) {
-alert(in insertHtml);
+alert("in insertHtml");
   var targetElem = document.querySelector("#main-content");
 targetElem.innerHTML = homeHtmlUrl.innerHTML;
 };
@@ -104,6 +104,7 @@ function buildAndShowHomeHTML (categories) {
   $ajaxUtils.sendGetRequest(
     homeHtmlUrl,
     function (homeHtml) {
+      alert("in load home snippet");
       var html = homeHtmlUrl;
       var chosenCategoryShortName=chooseRandomCategory(categories);
       //html =
@@ -151,6 +152,7 @@ function buildAndShowHomeHTML (categories) {
 
 // Given array of category objects, returns a random category object.
 function chooseRandomCategory (categories) {
+  alert("in chooseRandomCat");
   // Choose a random index into the array (from 0 inclusively until array length (exclusively))
   var randomArrayIndex = Math.floor(Math.random() * categories.length);
 
