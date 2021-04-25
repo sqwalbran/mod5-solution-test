@@ -49,12 +49,12 @@ function handleResponse(request,
       isJsonResponse = true;
     }
 
-    if (isJsonResponse) {
-      (responseHandler(JSON.parse(request.responseText)));
-    }
-    else {
-      (responseHandler(request.responseText));
-    }
+   // if (isJsonResponse) {
+   //   (responseHandler(JSON.parse(request.responseText)));
+   // }
+   // else {
+   //   (responseHandler(request.responseText));
+   // }
   }
 }
 
