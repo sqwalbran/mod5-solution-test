@@ -106,11 +106,17 @@ function buildAndShowHomeHTML (categories) {
     function (homeHtml) {
       var html = homeHtmlUrl;
       var chosenCategoryShortName=chooseRandomCategory(categories);
-      html =
-        insertProperty(html,"{{"+randomCategoryShortName+"}}.short_name");
+      //html =
+        //insertProperty(html,"{{"+randomCategoryShortName+"}}.short_name");
+      var html = homeHtmlUrl;
+      var insertProperty = function (html, propName, propValue) {
+           var propToReplace = "{{" + randomCategoryShortName + "}}";
+      html = html
+      .replace(new RegExp(propToReplace, "g"), randomChosenShortName);
+    return html;
+};
       
-      
-      return homeHtml;
+      return html;
 
 
       // TODO: STEP 2: Here, call chooseRandomCategory, passing it retrieved 'categories'
