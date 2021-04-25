@@ -29,10 +29,11 @@ var insertHtml = function (selector, html) {
   var targetElem = document.querySelector(selector);
   targetElem.innerHTML = html;
 };
-// var insertHtml = function (selector, homeHtmlUrl) {
-//   var targetElem = document.querySelector("#main-content");
-//   targetElem.innerHTML = homeHtmlUrl.innerHTML;
-// };
+var insertHtml = function (selector, html) {
+alert(in insertHtml);
+  var targetElem = document.querySelector("#main-content");
+targetElem.innerHTML = homeHtmlUrl.innerHTML;
+};
 
 //Show loading icon inside element identified by 'selector'.
 var showLoading = function (selector) {
