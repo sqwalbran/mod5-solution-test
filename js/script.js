@@ -30,7 +30,6 @@ var insertHtml = function (selector, html) {
   targetElem.innerHTML = html;
 };
 var insertHtml = function (selector, html) {
-alert("in insertHtml");
   var targetElem = document.querySelector("#main-content");
 targetElem.innerHTML = homeHtmlUrl.innerHTML;
 };
