@@ -8,7 +8,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
       $("#collapsable-nav").collapse('hide');
     }
   });
-});
+//});
 
 (function (global) {
 
