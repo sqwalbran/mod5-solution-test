@@ -4,7 +4,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
   $("#navbarToggle").blur(function (event) {
     var screenWidth = window.innerWidth;
     if (screenWidth < 768) {
-      alert("screen width is less than 768");
+      switchMenuToActive();
       $("#collapsable-nav").collapse('hide');
     }
   });
